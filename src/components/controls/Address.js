@@ -27,17 +27,6 @@ const Address = ({ name, control }) => {
 
           <Button
             onClick={() => {
-              append({
-                state: "",
-                city: "",
-              });
-            }}
-            className="p-0 bg-orange-800"
-            label="+"
-          />
-
-          <Button
-            onClick={() => {
               remove(index);
             }}
             disabled={index === 0}
@@ -46,6 +35,16 @@ const Address = ({ name, control }) => {
           />
         </div>
       ))}
+      <Button
+        onClick={() => {
+          append({
+            state: "",
+            city: "",
+          });
+        }}
+        className="p-0 bg-orange-800 self-start mb-3"
+        label="Add Address"
+      />
     </>
   );
 };

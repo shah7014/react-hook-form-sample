@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Controls from "./controls";
 
-const BasicInfoForm = () => {
+const AdvInfoForm = () => {
   const {
     handleSubmit,
     control,
@@ -77,4 +77,4 @@ const BasicInfoForm = () => {
   );
 };
 
-export default BasicInfoForm;
+export default AdvInfoForm;

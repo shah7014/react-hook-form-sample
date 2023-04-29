@@ -1,12 +1,12 @@
 import "./App.css";
-import BasicInfoForm from "./components/BasicInfoForm";
+import AdvInfoForm from "./components/AdvInfoForm";
 import IntroForm from "./components/IntroForm";
 
 function App() {
   return (
     <div className="App">
       {/* <IntroForm /> */}
-      <BasicInfoForm />
+      <AdvInfoForm />
     </div>
   );
 }

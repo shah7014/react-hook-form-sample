@@ -1,0 +1,50 @@
+.intro-form {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .form-input {
+    width: 50%;
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-error {
+    color: red;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  button {
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: orangered;
+  }
+
+  button[type="submit"] {
+    background-color: blueviolet;
+  }
+
+  .form-product {
+    width: 50%;
+    padding: 10px;
+    .product-info {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}

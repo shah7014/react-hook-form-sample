@@ -13,6 +13,7 @@ const BasicInfoForm = () => {
       email: "",
       phoneNumber: "",
       password: "",
+      addresses: [{ state: "", city: "" }],
     },
   });
 
@@ -66,12 +67,11 @@ const BasicInfoForm = () => {
           type="password"
         />
 
-        <button
-          className="bg-cyan-500 self-center px-4 py-2 rounded-lg text-xl"
-          type="submit"
-        >
-          Submit
-        </button>
+        {/* Address List */}
+        <Controls.Address control={control} name={"addresses"} />
+
+        {/* Submit */}
+        <Controls.Button type="submit" label="Submit" />
       </form>
     </div>
   );
